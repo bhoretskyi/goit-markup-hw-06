@@ -484,6 +484,9 @@ letter-spacing: 0.01em;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition-property: background-color, fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
 }
 .input-chek:checked + .checkbox-text span {
   background-color: var(--accent-color);
