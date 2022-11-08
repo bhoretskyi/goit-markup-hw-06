@@ -376,6 +376,7 @@ border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
+  
 }
 
 
@@ -387,6 +388,7 @@ border-radius: 4px;
   position: absolute;
   left: 12px;
   top: 50%;
+  transform: translateY(-50%);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--primary-animation);
@@ -461,10 +463,33 @@ line-height: 1.7;
 
 letter-spacing: 0.01em;
 
-  
-
-
 }
+
+.modal-link {
+  color: var(--accent-color);
+}
+.checkbox-text {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.checkbox-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.input-chek:checked + .checkbox-text span {
+  background-color: var(--accent-color);
+  background-color: transparent;
+  fill: var(--primary-white-color);
+}
+
+
 
   
   
