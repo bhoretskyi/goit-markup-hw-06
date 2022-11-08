@@ -352,6 +352,9 @@ img {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--primary-animation);
   
 }
 .close-button:hover,
